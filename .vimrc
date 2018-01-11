@@ -31,6 +31,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'vim-scripts/darktango.vim'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'morhetz/gruvbox'
+Plugin 'altercation/vim-colors-solarized'
 
 " ==== END PLUGIN THEMES ====
 
@@ -39,7 +40,6 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'hdima/python-syntax'
 Plugin 'othree/yajs.vim'
 Plugin 'mitsuhiko/vim-jinja'
-Plugin 'evanmiller/nginx-vim-syntax'
 " ==== END PLUGIN SYNTAX ====
 
 " ==== END PLUGINS ====
@@ -48,7 +48,6 @@ call vundle#end()
 filetype plugin indent on
 
 " ==== BASIC ====
-colorscheme gruvbox
 set guifont=Monospace\ 10
 set fillchars+=vert:\$
 syntax enable
@@ -61,6 +60,9 @@ set st=4 sw=4 et
 set shiftwidth=4
 set tabstop=4
 let &colorcolumn="80"
+
+" ==== COLORSCHEME ====
+colorscheme gruvbox
 
 " ==== NERDTREE ====
 let NERDTreeIgnore = ['\.pyc$','\.o$','\.so$','\.a$','\swp','\.swo','\.swn','\.swm','[a-zA-Z]*egg[a-zA-Z]*','[a-zA-Z]*cache[a-zA-Z]*']
